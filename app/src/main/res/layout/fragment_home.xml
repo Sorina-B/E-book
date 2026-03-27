@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:id="@+id/titleBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Little Women"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+
+        <CheckedTextView
+            android:id="@+id/authorBox"
+            android:layout_width="254dp"
+            android:layout_height="35dp"
+            android:fontFamily="cursive"
+            android:text="by Louisa May Alcott"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/BookCoverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:src="@drawable/_934_387827516" />
+
+        <Button
+            android:id="@+id/StartReadingBttn"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+
+            android:layout_margin="@dimen/cardview_default_elevation"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:foregroundTint="#731818"
+            android:text="Start Reading"
+            app:iconTint="#642121" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="14sp" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
